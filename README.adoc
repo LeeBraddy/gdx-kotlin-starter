@@ -1,0 +1,26 @@
+= GDX Kotlin Starter
+Lee Braddy
+{docdate}
+:source-highlighter: pygments
+
+Starter project for developing games using libGDX, Kotlin and KTX.
+
+== Prerequisites
+
+[no-bullet]
+* git scm
+* Java 1.8
+* Gradle 3.3 (optional)
+* Intellij or Android Studio (optional)
+
+== Getting Started
+
+Clone this repository and run the build.
+
+[source, bash]
+----
+git clone https://github.com/LeeBraddy/gdx-kotlin-starter.git
+cd gdx-kotlin-starter
+./gradlew build
+./gradlew desktop:run
+----
