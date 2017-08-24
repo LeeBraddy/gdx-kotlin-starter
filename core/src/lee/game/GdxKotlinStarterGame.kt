@@ -2,7 +2,7 @@ package lee.game
 
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
-import ktx.app.KotlinApplication
+import ktx.app.KtxApplicationAdapter
 import ktx.log.*
 
 object BadLogic {
@@ -28,13 +28,13 @@ object BadLogic {
     }
 }
 
-class GdxKotlinStarterGame : KotlinApplication(fixedTimeStep = 1f / 60f, maxDeltaTime = 1f / 15f) {
+class GdxKotlinStarterGame : KtxApplicationAdapter {
     override fun create() {
         // Do nothing.
         info {"Create method"}
     }
 
-    override fun render(delta: Float) {
+    override fun render() {
         BadLogic.render()
     }
 
